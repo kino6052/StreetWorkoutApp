@@ -83,12 +83,40 @@ body {
     z-index: 99;
 }
 
-.challenge h2 {
+
+.badge {
+    display: inline-block;
+    height: 300px;
+    float: left;
+}
+
+.badge img {
+    display: inline-block;
+    height: 150px;
+    margin: 75px 20px 75px 20px;
+}
+
+.badge div {
+    color: white;
+    display: inline-block;
     font-family: Roboto;
-    padding: 0;
+    font-size: 60px;
+    left: 200px;
     margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    width: 100px;
+}
+
+.percent {
+    color: white;
+    display: inline-block;
+    float: right;
+    font-family: Roboto;
     font-size: 80px;
-    line-height: 300px;
+    line-height: 220px;
+    margin: 40px;
 }
 
 .items {
@@ -175,7 +203,7 @@ body {
     margin: 10px;
     padding: 10px 0 10px 0;
     text-align: center;
-	text-size: 40px;
+	text-size: 80px;
 }
 </style>
 <script>
@@ -199,8 +227,13 @@ body {
             <p><span class="glyphicon glyphicon-triangle-left left"></span> Today <span class="glyphicon glyphicon-triangle-right right"></span><p>
         </div>
         <div class="col-xs-12 challenge">
-            <p>Challenge</p>
-			<p class="challenge-completion">60%</span></p>
+            <div class="badge">
+			<img src="http://foursquareguru.com/media/badges/banksy_big.png"/>
+			<div>Badger Badge</div>
+			</div>
+			<div class="percent">
+				60<span>%</span>
+			</div>
         </div>
         <div class="col-xs-12 items">
 	    <div class="item">
