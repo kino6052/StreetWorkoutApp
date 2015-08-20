@@ -73,7 +73,6 @@ body {
 
 .item {
     position: relative;
-    bottom: 20px;
     background-color: white;
     color: black;
     text-align: center;
@@ -87,14 +86,13 @@ body {
 
 .item p {
     display: inline-block;
-    position: relative;
-    bottom: 20px;
+    position: absolute
+    bottom: 0;
     left: 200px;
 }
 
 .item img {
-    float: left;
-    position: relative;
+    position: absolute;
     display: inline-block;
     bottom: 20px;
     left: 20px;
@@ -115,7 +113,7 @@ body {
             <p><span class="glyphicon glyphicon-plus left"></span> Today <span class="glyphicon glyphicon-plus right"></span><p>
         </div>
         <div class="col-xs-12 challenge">
-            <h2>Challenge<h2>
+            <h2>Challenge <span class="challenge-completion">60%</span></h2>
         </div>
         <div class="col-xs-12">
 	    <div class="item">
