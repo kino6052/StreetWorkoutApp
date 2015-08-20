@@ -21,6 +21,7 @@ body {
     background-color: black;
     color: white;
     height: 300px;
+	margin: 0;
     position: fixed;
     text-align: center;
     top: 0;
@@ -37,8 +38,9 @@ body {
 
 .header span {
 	color: #bb070e;
+	position: absolute;
 	right: 20px;
-	top: 120px;
+	top: 115px;
 }
 
 .menu {
@@ -62,11 +64,13 @@ body {
 .left {
     float: left;
     margin-left: 10px;
+	margin-top: 12px;
 }
 
 .right {
     float: right;
     margin-right: 10px;
+	margin-top: 12px;
 }
 
 .challenge {
@@ -163,7 +167,8 @@ body {
             <p><span class="glyphicon glyphicon-triangle-left left"></span> Today <span class="glyphicon glyphicon-triangle-right right"></span><p>
         </div>
         <div class="col-xs-12 challenge">
-            <h2>Challenge <span class="challenge-completion">60%</span></h2>
+            <p>Challenge</p>
+			<p class="challenge-completion">60%</span></p>
         </div>
         <div class="col-xs-12 items">
 	    <div class="item">
@@ -189,7 +194,7 @@ body {
         </div>    
         <div class="col-xs-12">
 	    <div class="menu-bottom">
-		<div class="menu-item"><a href="./test.html"><span class="glyphicon glyphicon-home"></span></a></div>
+		<div class="menu-item"><a href="/StreetWorkoutApp/index.html"><span class="glyphicon glyphicon-home"></span></a></div>
 	    <div class="menu-item"><span class="glyphicon glyphicon-star"></span></div>
 		<div class="menu-item"><span class="glyphicon glyphicon-play-circle"></span></div>
 		<div class="menu-item"><span class="glyphicon glyphicon-globe"></span></div>
