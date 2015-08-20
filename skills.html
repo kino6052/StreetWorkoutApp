@@ -43,8 +43,9 @@ body {
 	top: 115px;
 }
 
-.menu {
-    background-color: white;
+.menu-red {
+    background-color: #bb070e;
+	color: white;
     font-size: 30px;
     height: 75px;
 	margin: 0;
@@ -55,7 +56,7 @@ body {
     z-index: 100;
 }
 
-.menu p {
+.menu-red p {
     margin: 0;
     font-size: 40px;
     font-family: Roboto;
@@ -122,9 +123,30 @@ body {
     margin: 40px;
 }
 
-.items {
+.items, .skills {
 	margin-bottom: 150px;
     position: relative;
+}
+
+.level {
+    text-align: center;
+    width: 100%;
+}
+
+.column {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+.icon {
+    border: 1px solid black;
+    border-radius: 100px;
+    font-family: Helvetica;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 80px;
 }
 
 .item {
@@ -225,46 +247,65 @@ body {
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 header">
-            <h1>Street Workout <span class="glyphicon glyphicon-plus"></span><h1>
+            <h1>Skill Tree<h1>
         </div>
-        <div class="col-xs-12 menu">
-            <p><span class="glyphicon glyphicon-triangle-left left"></span> Today <span class="glyphicon glyphicon-triangle-right right"></span><p>
+        <div class="col-xs-12 menu-red">
+            <p><span class="glyphicon glyphicon-triangle-left left"></span> Lever <span class="glyphicon glyphicon-triangle-right right"></span><p>
         </div>
-        <div class="col-xs-12 challenge">
-            <div class="badge">
-			<img src="http://foursquareguru.com/media/badges/banksy_big.png"/>
-			<div class="title">Badger Badge</div>
-			</div>
-			<div id="percent">
-				60<span>%</span>
-			</div>
+        <div class="col-xs-12 skills">
+			<div class="level">
+        <div class="column">
+            <div class="icon">
+                Skill 01
+            </div>
         </div>
-        <div class="col-xs-12 items">
-			<div class="item">
-				<img class="icon" src="imgs/icon.png"/>
-				<p><span class="digit count">50</span> neg-lever <span class="digit percent">120</span>% <span class="glyphicon glyphicon-chevron-right"></span></p>
-			</div>
-			<div class="item">
-				<img class="icon" src="imgs/icon.png"/>
-				<p><span class="digit count">60</span> pull-ups <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
-			</div>
-			<div class="item">
-				<img class="icon" src="imgs/icon.png"/>
-				<p><span class="digit count">20</span> lever reps <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
-			</div>
-			<div class="item">
-				<img class="icon" src="imgs/icon.png"/>
-				<p><span class="digit count">50</span> neg-lever <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
-			</div>
-			<div class="item">
-				<img class="icon" src="imgs/icon.png"/>
-				<p><span class="digit count">100</span> squats <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
-			</div>
+    </div>
+    <div class="level">
+        <div class="column">
+            <div class="icon">
+                Skill 02
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon">
+                Skill 03
+            </div>
+        </div>
+    </div>
+    <div class="level">
+        <div class="column">
+            <div class="icon">
+                Skill 04
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon">
+                Skill 05
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon">
+                Skill 06
+            </div>
+        </div>
+    </div>
+    <div class="level">
+        <div class="column">
+            <div class="icon">
+                Skill 07
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon">
+                Skill 08
+            </div>
+        </div>
+    </div>
         </div>    
         <div class="col-xs-12">
 			<div class="menu-bottom">
 				<div class="menu-item"><a href="/StreetWorkoutApp/index.html"><span class="glyphicon glyphicon-home"></span></a></div>
-				<div class="menu-item"><a href="/StreetWorkoutApp/skills.html"><span class="glyphicon glyphicon-star"></span></a></div>
+				<div class="menu-item"><span class="glyphicon glyphicon-star"></span></div>
 				<div class="menu-item"><span class="glyphicon glyphicon-play-circle"></span></div>
 				<div class="menu-item"><span class="glyphicon glyphicon-globe"></span></div>
 				<div class="menu-item"><span class="glyphicon glyphicon-user"></span></div>
