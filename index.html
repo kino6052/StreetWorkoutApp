@@ -20,8 +20,10 @@ body {
 .header {
     background-color: black;
     color: white;
-    text-align: center;
     height: 300px;
+    position: fixed;
+    text-align: center;
+    top: 0;
 }
 
 .header h1 {
@@ -34,8 +36,11 @@ body {
 
 .menu {
     font-size: 30px;
-    text-align: center;
+    height: 75px;
     margin: 5px 0 5px 0;
+    position: fixed;
+    text-align: center;
+    top: 300px;
 }
 
 .menu p {
@@ -55,12 +60,13 @@ body {
 }
 
 .challenge {
-
     background-color: #bb070e;
     color: white;
-    text-align: center;
     height: 300px;
     margin: 0;
+    position: fixed;
+    text-align: center;
+    top: 375px;
 }
 
 .challenge h2 {
@@ -69,6 +75,11 @@ body {
     margin: 0;
     font-size: 80px;
     line-height: 300px;
+}
+
+.items {
+    position: absolute;
+    top: 675px;
 }
 
 .item {
@@ -126,7 +137,6 @@ body {
     width: 20%;    
 }
 
-.menu
 </style>
 </head>
 <body>
@@ -141,7 +151,7 @@ body {
         <div class="col-xs-12 challenge">
             <h2>Challenge <span class="challenge-completion">60%</span></h2>
         </div>
-        <div class="col-xs-12">
+        <div class="col-xs-12 items">
 	    <div class="item">
 	    	<img class="icon" src="imgs/icon.png"/>
 	    	<p><span class="digit count">50</span> neg-lever <span class="digit percent">120</span>% <span class="glyphicon glyphicon-chevron-right"><p>
@@ -158,7 +168,7 @@ body {
 	    	<div class="menu-item"><span class="glyphicon glyphicon-home"></span></div>
 	    	<div class="menu-item"><span class="glyphicon glyphicon-star"></span></div>
 		<div class="menu-item"><span class="glyphicon glyphicon-play-circle"></span></div>
-		<div class="menu-item"><span class="glyphicon glyphicon-play-globe"></span></div>
+		<div class="menu-item"><span class="glyphicon glyphicon-globe"></span></div>
 		<div class="menu-item"><span class="glyphicon glyphicon-user"></span></div>
 	    </div>
         </div>    
