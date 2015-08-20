@@ -72,6 +72,8 @@ body {
 }
 
 .item {
+    position: relative;
+    bottom: 20px;
     background-color: white;
     color: black;
     text-align: center;
@@ -81,7 +83,6 @@ body {
     margin: 0 10px 0 10px;
     font-size: 40px;
     border-bottom: 4px solid gray;
-    bottom: 30px;
 }
 
 .item p {
@@ -117,9 +118,12 @@ body {
 	    	<p><span class="digit count">50</span> neg-lever <span class="digit percent">120</span>%<p>
 	    </div>
         </div>    
-	<div class="col-xs-12 item">
-	    <p><span class="digit count">90</span> full-lever <span class="digit percent">120</span>%<p>
-        </div>        
+        <div class="col-xs-12">
+	    <div class="item">
+	    	<img class="icon" src="imgs/icon.png"/>
+	    	<p><span class="digit count">50</span> neg-lever <span class="digit percent">120</span>%<p>
+	    </div>
+        </div>    
     </div>
 </div>
 </body>
