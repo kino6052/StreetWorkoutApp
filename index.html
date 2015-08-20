@@ -155,7 +155,34 @@ body {
     width: 20%;    
 }
 
+.menu-context {
+    background-color: gray;
+    display:none;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu-context div {
+    background-color: white;
+    border-radius: 4px;
+    bottom: 0;
+    margin: 10px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
 </style>
+<script>
+	$(document).ready(function(){
+		$(".glyphicon-plus").click(function(){
+			$(".menu-context").show();
+		});
+		$("#cancel").click(function(){
+			$(".menu-context").hide();
+		});
+	});
+</script>
 </head>
 <body>
 <div class="container-fluid">
@@ -202,6 +229,11 @@ body {
 	    </div>
         </div>    
     </div>
+	<div class="menu-context">
+		<div id="add-exercise">Add Exercise</div>
+		<div id="add-media">Add Media</div>
+		<div id="cancel">Cancel</div>
+	</div>
 </div>
 </body>
 </html>
