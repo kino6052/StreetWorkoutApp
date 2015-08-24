@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+<style>
+/* Latest compiled and minified CSS included as External Resource*/
+
+/* Optional theme */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+@import url('//fonts.googleapis.com/css?family=Roboto:400,300');
+
+body {
+    margin: -20px 0 0 0;
+    
+}
+
+.header {
+    background-color: black;
+    color: white;
+    height: 300px;
+	margin: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    z-index: 101;
+}
+
+.header h1 {
+    position: relative;
+    line-height: 300px;
+    font-size: 80px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.header span {
+	color: #bb070e;
+	position: absolute;
+	right: 20px;
+	top: 115px;
+}
+
+.menu {
+    background-color: white;
+    font-size: 30px;
+    height: 75px;
+	margin: 0;
+    padding: 5px 0 5px 0;
+    position: fixed;
+    text-align: center;
+    top: 300px;
+    z-index: 100;
+}
+
+.menu p {
+    margin: 0;
+    font-size: 40px;
+    font-family: Roboto;
+}
+
+.left {
+    float: left;
+    margin-left: 10px;
+	margin-top: 12px;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+	margin-top: 12px;
+}
+
+.challenge {
+    background-color: #bb070e;
+    color: white;
+    height: 300px;
+    margin: 375px 0 0 0;
+	position: relative;
+    text-align: center;
+    z-index: 99;
+}
+
+
+.badge {
+	background-color: transparent;
+    display: inline-block;
+    height: 300px;
+    float: left;
+}
+
+.badge img {
+    display: inline-block;
+    height: 150px;
+    margin: 75px 20px 75px 20px;
+}
+
+.badge .title {
+    color: white;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 60px;
+    left: 200px;
+    margin: 0 0 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 90px;
+	white-space: normal;
+    width: 100px;
+	word-wrap: normal;
+}
+
+.challenge #percent {
+	color: white;
+    display: inline-block;
+    float: right;
+    font-family: Helvetica;
+    font-size: 80px;
+    line-height: 220px;
+    margin: 40px;
+}
+
+.items {
+	margin-bottom: 150px;
+    position: relative;
+}
+
+.item {
+    position: relative;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 200px;
+    font-family: Roboto;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    font-size: 40px;
+    border-bottom: 4px solid gray;
+}
+
+.item .glyphicon-plus {
+	right: 20px;
+}
+
+.item p {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+.item img {
+    position: absolute;
+    display: inline-block;
+    bottom: 20px;
+    left: 20px;
+}
+
+.item span {
+    font-size: 80px;
+}
+
+.menu-bottom {
+    font-family: Helvetica;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    margin: -15px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.menu-bottom .menu-item {
+    background-color: lightgray;
+    display: inline-block;
+    font-size: 60px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0 0 0 -5px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 20%;    
+}
+
+.menu-context {
+    background-color: gray;
+    display: none;
+    height: 100vh;
+	margin-left: -15px;
+    position: fixed;
+	text-size: 80px;
+	top: 0;
+    width: 100%;
+    z-index: 102;
+}
+
+.menu-context p {
+    background-color: white;
+    border-radius: 4px;
+    bottom: 0;
+	font-size: 60px;
+	height: 200px;
+	line-height: 200px;
+    margin: 10px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+</style>
+<script>
+	$(document).ready(function(){
+		$(".glyphicon-plus").click(function(){
+			$(".menu-context").show();
+		});
+		$("#cancel").click(function(){
+			$(".menu-context").hide();
+		});
+	});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 header">
+            <h1>Street Workout <span class="glyphicon glyphicon-plus"></span><h1>
+        </div>
+        <div class="col-xs-12 menu">
+            <p><span class="glyphicon glyphicon-triangle-left left"></span> Today <span class="glyphicon glyphicon-triangle-right right"></span><p>
+        </div>
+        <div class="col-xs-12 challenge">
+            <div class="badge">
+			<img src="http://foursquareguru.com/media/badges/banksy_big.png"/>
+			<div class="title">Badger Badge</div>
+			</div>
+			<div id="percent">
+				60<span>%</span>
+			</div>
+        </div>
+        <div class="col-xs-12 items">
+			<div class="item">
+				<img class="icon" src="imgs/icon.png"/>
+				<p><span class="digit count">50</span> neg-lever <span class="digit percent">120</span>% <span class="glyphicon glyphicon-chevron-right"></span></p>
+			</div>
+			<div class="item">
+				<img class="icon" src="imgs/icon.png"/>
+				<p><span class="digit count">60</span> pull-ups <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
+			</div>
+			<div class="item">
+				<img class="icon" src="imgs/icon.png"/>
+				<p><span class="digit count">20</span> lever reps <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
+			</div>
+			<div class="item">
+				<img class="icon" src="imgs/icon.png"/>
+				<p><span class="digit count">50</span> neg-lever <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
+			</div>
+			<div class="item">
+				<img class="icon" src="imgs/icon.png"/>
+				<p><span class="digit count">100</span> squats <span class="digit percent">120</span>%  <span class="glyphicon glyphicon-chevron-right"></span></p>
+			</div>
+        </div>    
+        <div class="col-xs-12">
+			<div class="menu-bottom">
+				<div class="menu-item"><a href="/StreetWorkoutApp/index.html"><span class="glyphicon glyphicon-home"></span></a></div>
+				<div class="menu-item"><a href="/StreetWorkoutApp/skills.html"><span class="glyphicon glyphicon-star"></span></a></div>
+				<div class="menu-item"><span class="glyphicon glyphicon-play-circle"></span></div>
+				<div class="menu-item"><span class="glyphicon glyphicon-globe"></span></div>
+				<div class="menu-item"><span class="glyphicon glyphicon-user"></span></div>
+			</div>
+        </div>    
+    </div>
+	<div class="menu-context">
+		<div id="add-exercise"><p>Add Exercise</p></div>
+		<div id="add-media"><p>Add Media</p></div>
+		<div id="cancel"><p>Cancel</p></div>
+	</div>
+</div>
+</body>
+</html>
