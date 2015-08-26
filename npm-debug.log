@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/v0.10.35/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongoosee',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'mongoosee', null ]
+6 verbose cache add name=undefined spec="mongoosee" args=["mongoosee",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'mongoosee',
+7 verbose parsed url   path: 'mongoosee',
+7 verbose parsed url   href: 'mongoosee' }
+8 silly lockFile fdc34a4e-mongoosee mongoosee
+9 verbose lock mongoosee /home/ubuntu/.npm/fdc34a4e-mongoosee.lock
+10 silly lockFile fdc34a4e-mongoosee mongoosee
+11 silly lockFile fdc34a4e-mongoosee mongoosee
+12 verbose addNamed [ 'mongoosee', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile d03718e0-mongoosee mongoosee@
+15 verbose lock mongoosee@ /home/ubuntu/.npm/d03718e0-mongoosee.lock
+16 silly addNameRange { name: 'mongoosee', range: '*', hasData: false }
+17 verbose request where is /mongoosee
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 727a308882e96c61
+20 verbose url raw /mongoosee
+21 verbose url resolving [ 'https://registry.npmjs.org/', './mongoosee' ]
+22 verbose url resolved https://registry.npmjs.org/mongoosee
+23 verbose request where is https://registry.npmjs.org/mongoosee
+24 info trying registry request attempt 1 at 22:13:14
+25 http GET https://registry.npmjs.org/mongoosee
+26 http 404 https://registry.npmjs.org/mongoosee
+27 silly registry.get cb [ 404,
+27 silly registry.get   { 'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '2',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Tue, 25 Aug 2015 22:13:28 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-dfw1822-DFW',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1440540808.695481,VS0,VE49' } ]
+28 silly lockFile d03718e0-mongoosee mongoosee@
+29 silly lockFile d03718e0-mongoosee mongoosee@
+30 error 404 Not Found
+30 error 404
+30 error 404 'mongoosee' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404 It was specified as a dependency of 'workspace'
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Linux 3.14.13-c9
+32 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "install" "mongoosee" "--save"
+33 error cwd /home/ubuntu/workspace
+34 error node -v v0.10.35
+35 error npm -v 1.4.28
+36 error code E404
+37 verbose exit [ 1, true ]

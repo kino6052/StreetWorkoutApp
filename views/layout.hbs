@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css"></link>
+  <script>
+    $(document).ready(function() {
+      $(".glyphicon-plus").click(function() {
+        $(".menu-context").show();
+      });
+      $("#cancel").click(function() {
+        $(".menu-context").hide();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 header">
+        <h1>Street Workout <span class="glyphicon glyphicon-plus"></span><h1>
+      </div>
+      <div class="col-xs-12 menu">
+          <p><span class="glyphicon glyphicon-triangle-left left"></span> Today <span class="glyphicon glyphicon-triangle-right right"></span><p>
+      </div>
+      {{#if username}}
+      <div class="col-xs-12">
+        <p>Hi, {{username}}</p>
+        <a href="/users/logout">Log out</a>
+      </div>
+      {{/if}}
+      {{{body}}}
+      <div class="col-xs-12">
+			  <div class="menu-bottom">
+				  <div class="menu-item"><a href="/StreetWorkoutApp/index.html"><span class="glyphicon glyphicon-home"></span></a></div>
+				  <div class="menu-item"><a href="/StreetWorkoutApp/skills.html"><span class="glyphicon glyphicon-star"></span></a></div>
+				  <div class="menu-item"><span class="glyphicon glyphicon-play-circle"></span></div>
+				  <div class="menu-item"><span class="glyphicon glyphicon-globe"></span></div>
+				  <div class="menu-item"><span class="glyphicon glyphicon-user"></span></div>
+			  </div>
+      </div>    
+    </div>
+	<div class="menu-context">
+		<div id="add-exercise"><p>Add Exercise</p></div>
+		<div id="add-media"><p>Add Media</p></div>
+		<div id="cancel"><p>Cancel</p></div>
+	</div>
+</div>
+</body>
+</html>
