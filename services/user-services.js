@@ -1,5 +1,7 @@
 var bcrypt = require('bcrypt');
 var User = require("../models/user").User;
+var Stats = require("../models/stats").Stats;
+var config = require("../config");
 
 exports.addUser = function(user, next) {
     bcrypt.hash(user.password, 10, function(err, hash) {
@@ -20,6 +22,16 @@ exports.addUser = function(user, next) {
         });
     });
     
+};
+
+exports.addStats = function(type, quantity, date, next) {
+    // adds a certain qunatity of reps for an excercise (e.g. pushups)
+}
+
+exports.findStats = function(user, date, next) {
+    Stats.findOne({$and: [{date: config.getCurrentDate()}, {username: user}]}, function(err, statistics){
+        next(err, statistics);
+    });  
 };
 
 exports.findUser = function(username, next) {
